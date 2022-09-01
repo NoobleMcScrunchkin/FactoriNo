@@ -1,0 +1,23 @@
+.tile {
+    position: absolute;
+    aspect-ratio: 1;
+    // border: 1px solid #ccc;
+    // box-sizing: border-box;
+    width: 32px;
+}
+
+.tile>svg {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+#tile-cursor {
+    z-index: 100;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#tile-cursor>svg {
+    opacity: 0.75;
+}

@@ -1,0 +1,25 @@
+---
+import MainHead from '../components/head/MainHead.astro';
+import GameHead from '../components/head/GameHead.astro';
+import Templates from '../components/Templates.astro';
+
+const { title } = Astro.props;
+const pageTitle = title ? title : 'FactoriNo';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        <title>{pageTitle}</title>
+        <MainHead/>
+        <GameHead/>
+    </head>
+    <body oncontextmenu="return false;">
+		<slot/>
+		<Templates/>
+    </body>
+</html>
