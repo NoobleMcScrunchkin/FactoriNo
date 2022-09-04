@@ -53,3 +53,14 @@
   width: 32px;
   aspect-ratio: 1;
   background-color: #333; }
+
+.item {
+  position: absolute;
+  aspect-ratio: 1;
+  width: 12px;
+  z-index: 10; }
+
+.item > svg {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1; }
